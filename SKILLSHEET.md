@@ -1,4 +1,4 @@
-(最終更新日: 2023年10月8日)
+(最終更新日: 2026年3月28日)
 
 # 自己PR
 - バックエンドの開発経験が5年以上ある。直近はGoを用いた開発が多いです。
@@ -14,22 +14,23 @@
 | ---------------------: | :--------------------------------- | :------------------------------------------------------ |
 |  2014年4月 – 2018年3月 | 青山学院大学　情報テクノロジー学科 | 研究はUnityを用いたドローン操縦システムの開発に従事     |
 | 2018年4月 – 2021年12月 | ユナイテッド株式会社               | ソーシャルゲームやWebサービスの新規開発・運用に従事     |
-|            2022年1月 – | 株式会社サイバーエージェント       | 小売企業向けのアプリSDKや広告配信プロダクトの開発に従事 |
+|  2022年1月 – 2024年7月 | 株式会社サイバーエージェント       | 小売企業向けのアプリSDKや広告配信プロダクトの開発に従事 |
+|            2024年8月 – | 株式会社Gaudiy                     | グローバル向けエンタメコミュニティサービスの開発に従事   |
 
 ## スキルセット
-- Go, React, next.js, Vue.js, TypeScript, node.js, Java, SpringBoot, SAStruts, Scala, Python, Flutter, Swift
+- Go, React, Next.js, Vue.js, TypeScript, Node.js, Java, SpringBoot, SAStruts, Scala, Python, Flutter, Swift, dbt
 ### クラウド
 - AWS, GCP
 ### サーバー
 - Linux, nginx, Apache Tomcat
 ### DB
-- MySQL, PostgrSQL, Redis, Snowflake, BigQuery
+- MySQL, PostgreSQL, Redis, Snowflake, BigQuery, Spanner
 ### CI/CD
 - GithubActions, Jenkins, GitLab Runner
 ### 監視
 - Datadog, CloudWatch, CloudLogging
 ### その他
-- Docker, Terraform, Swagger, Google Apps Script, Lima, Mantis, GitLab, BitBucket, SendGrid, DevCycle
+- Docker, Terraform, Swagger, Google Apps Script, Lima, Mantis, GitLab, BitBucket, SendGrid, DevCycle, GKE, Datastream, Dataflow, AWS DMS
 
 # 担当プロジェクト
 
@@ -288,5 +289,78 @@
 - エラーログとGCPアラートのSlack通知基盤の構築
 - フィーチャーフラグ管理ツールの導入（DevCycle）
 - メール送信基盤の構築（SendGrid）
+
+</details>
+
+
+## グローバル向けエンタメコミュニティサービスの新機能開発
+
+■ 使用技術
+- Go, GCP(Cloud Run Jobs, Cloud Workflows), AWS(Fargate, DynamoDB), MySQL, Redis, TypeScript(React), Datadog, Terraform, GithubActions, Connect RPC
+
+■ 開発時期
+- 2024年8月 - 2026年1月
+
+<details>
+<summary>プロジェクトの詳細</summary>
+
+### プロジェクト内容
+
+- 海外ユーザーを中心としたアニメ・マンガ関連のコミュニティプラットフォームの新機能開発
+
+### 担当
+
+- バックエンドの設計・開発を担当
+
+### 実績
+
+#### バックエンド
+- 既存認証基盤を活用した認証の仕組みの設計・実装
+- GCP・AWSをまたいだマルチクラウド構成のデータ集計ジョブの開発
+- DynamoDBの導入
+- 新機能のバックエンド設計・実装
+- レガシーDB由来の文字化け問題の調査・対応
+- フロントエンド行動ログ基盤の導入
+- gRPC（Connect RPC）の導入
+
+</details>
+
+
+## データ基盤構築・toBダッシュボード開発
+
+■ 使用技術
+- Python, Next.js, Go, dbt, Terraform, GithubActions, GCP(GKE, Spanner, Datastream, Dataflow, BigQuery), AWS(DMS)
+
+■ 開発時期
+- 2026年1月 - 現在
+
+<details>
+<summary>プロジェクトの詳細</summary>
+
+### プロジェクト内容
+
+- データ基盤の構築と、それに付随するtoB向けダッシュボードの開発
+
+### 担当
+
+- データ基盤の設計・構築およびダッシュボード開発を担当
+
+### 実績
+
+#### データ基盤
+- dbtによるデータETLパイプラインの構築
+- AWS DMS・Datastream・Dataflowを組み合わせたマルチクラウド構成のデータリアルタイム同期基盤の構築
+- Gemini APIを活用したデータパイプラインの構築
+- Pythonによるデータ分析ジョブの開発
+- 外部データプロバイダーの選定（他社比較・データ取得要件の整理・契約交渉を主導）
+
+#### フロントエンド / バックエンド
+- Next.jsによるtoB向けダッシュボードの開発（フロントエンド・バックエンド両方を実装）
+- ログ取得要件の整理およびフロントエンドでのログ計測実装（GDPR/CCPA対応を含む）
+- フィーチャーフラグの導入
+
+#### インフラ
+- Terraformによるインフラのコード管理
+- GithubActionsによるCI/CDの構築
 
 </details>
